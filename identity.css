@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.profile_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 131);
+
+}
+
+.image_bg .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    padding: 3px;
+    border: 3px solid white;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.image_bg{
+    background: cyan;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    position: relative;
+
+}
+
+.image{
+    position: relative;
+    border: 3px solid white;
+}
+
+.profile_card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* -----MEDIA BUTTONS------ */
+.profile_card .media_buttons{
+    align-items: center;
+    display: flex;
+
+}
+
+.media_buttons a{
+    width: 40px;
+    height: 40px;
+    background: rgb(44, 4, 221);
+    margin: 10px 8px;
+    border-radius: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    box-shadow: 5px 5px 5px rgb(0, 0, 24) inset;
+
+}
+
+.media_buttons a:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+
+}
+
+/* ----- CONTACT BUTTONS------- */
+
+.profile_card .btn{
+    
+    margin-top: 10px;
+}
+
+.btn button{
+    color: white;
+    margin: 5px 9px;
+    padding: 5px;
+    font-weight: 300;
+    background: rgb(44, 4, 221);
+    border-radius: 24px;
+    border: none;
+    }
+
+.btn .Subscribe:hover{
+    cursor: pointer;
+    color: rgb(44, 4, 221);
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+    font-weight: 600;
+    border: none;
+}
+
+.btn .Message:hover{
+    cursor: pointer;
+    color: rgb(44, 4, 221);
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.651);
+    font-weight: 600;
+    border: none;
+}
+
+.profile_card .reaction{
+    display: flex;
+    margin: 5px 5px;
+
+}
+
+.reaction .heart{
+    margin: 8px;
+    background: rgb(230, 230, 230);
+    border-radius: 7px;
+    padding: 5px;
+    
+}
+
+.reaction .heart:hover{
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+.reaction .comment{
+    margin: 8px;
+    background: rgb(230, 230, 230);
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.reaction .share{
+    margin: 8px;
+    background: rgb(230, 230, 230);
+    border-radius: 7px;
+    padding: 5px;
+    
+}
+
