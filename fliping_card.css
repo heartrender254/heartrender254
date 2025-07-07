@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+section{
+    background: rgb(0, 0, 34);
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+section::before{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(315deg,#22C1C3, #FAD578);
+    border-radius: 50%;  
+    position: absolute;
+    content: "";
+    align-items: center;
+    justify-content: center;
+    transform: translate(-180px, -100px);
+    
+}
+
+section::after{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(315deg,#22C1C3, #FAD578);
+    border-radius: 50%;  
+    position: absolute;
+    content: "";
+    align-items: center;
+    justify-content: center;
+    transform: translate(180px, 100px);
+    
+}
+
+
+.container{
+    width: 375px;
+    height: 240px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    z-index: 100;
+    
+}
+
+.container .card {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.219);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    margin: 15px 15px 15px 15px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 5px 5px rgb(0, 0, 0, 0.1);   
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    backface-visibility: hidden;
+}
+
+.container:hover{
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition-duration: 2s;
+        
+}
+
+
+header{
+    margin: 20px;
+    height: 20px;
+    max-width: 100%;
+    display: flex;
+    padding: 5px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .left{
+    display: flex;
+
+
+}
+
+img{
+    height: 30px;
+    width: auto;
+    display: flex;
+    
+    }
+
+.right_image{
+    right: 0;
+}
+
+span{
+    font-size: 20px;
+}
+
+.front-part .detailed_info{
+    margin: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+
+.detailed_info h5{
+    color: white;
+    font-weight: 300;
+}
+
+.detailed_info .card_number{
+        font-size: 20px;
+}
+
+.detailed_info h6{
+    color: white;
+}
+
+
+.container .card.back-part{
+    border: none;
+    position: absolute;
+    transform: rotateY(180deg);
+   
+}
+
+    
+
+
+
+
+.back-part .black{
+    background: black;
+    width: 100%;
+    height: 30px;
+
+
+
+}
+
+.card.back-part .magnetic-sticker{
+    height: 40px;
+    width: 85%;
+    background: repeating-linear-gradient(#fff,#fff 3px, #efefef , #efefef 9px);
+    border-radius: 6px;
+    margin-top: 20px;
+    justify-content: flex-end;  
+    display: flex;
+    right: 50%;
+    
+}
+
+.magnetic-sticker i{
+    color: black;
+    padding: 2px 4px;
+    margin-right: -40px;
+    background: white;
+    height: auto;
+    border-radius: 5px;
+
+     
+}
+ .back-part h6{
+    font-size: 12px;
+ }
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
